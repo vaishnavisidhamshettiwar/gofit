@@ -1,0 +1,39 @@
+<html>
+<h1>
+Contact us
+</h1>
+<head>
+<a href="file:///home/spit/Desktop/gofit.html"><h1>Gofit </h1></br></a>
+<a href="file:///home/spit/Desktop/home.html"><h1>HOME </h1></br></a>  
+<a href="file:///home/spit/Desktop/blog.html"><h1>Blog</h1></br></a> 
+</head>
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</br>
+
+<form >
+  First name:<br>
+  <input type="text" name="firstname" >
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" >
+  <br>
+  Email-id:<br>
+  <input type="text" name="emailid" >
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</html>

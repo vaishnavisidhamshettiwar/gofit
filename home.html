@@ -1,0 +1,53 @@
+<html>
+<h1>
+HOME
+</h1>
+<head>
+<a href="file:///home/spit/Desktop/gofit.html"><h1>Gofit</h1></br></a> 
+<a href="file:///home/spit/Desktop/blog.html"><h1>BLOG </h1></br></a> 
+<a href="file:///home/spit/Desktop/contact.html"><h1>CONTACT US </h1></br></a> 
+</head>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="h1.jpg" style="width:100%">
+  <img class="mySlides" src="h2.jpg" style="width:100%">
+ 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+ <body>
+<p>
+A company overview (also known as company information or a company summary) is an essential part of a business plan. Your company overview should be exactly what it sounds like: an overview containing all of the most important points about your company. It usually appears after the executive summary.
+
+</p>
+</br>
+<img src="h1.jpg"  >
+<p>
+Find everything you need to crush your fitness goals such as workout routines, training plans, free workout videos, fitness tips, exercise trends, workout playlists, gear, clothes and more.
+</p>
+<img src="h2.jpg"  >
+<p>
+Find everything you need to crush your fitness goals such as workout routines, training plans, free workout videos, fitness tips, exercise trends, workout playlists, gear, clothes and more.
+</p>
+
+</body>
+</html>
